@@ -1,0 +1,171 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="estilos.css">
+    <title>Colegio El Quinto Escalón</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
+
+    
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+    
+<link href="product.css" rel="stylesheet">
+
+</head>
+  <body>
+
+    <header class="site-header sticky-top py-1">
+      <nav class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="#" aria-label="Product">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        </a>
+        <a HREF="index.html" class="py-2 d-none d-md-inline-block" href="#">Inicio </a>
+        <a HREF="quienes somos.html" class="py-2 d-none d-md-inline-block" href="#">Quienes somos</a>
+    
+        <a HREF="promediodenotas.html" class="py-2 d-none d-md-inline-block" href="#">Registro de notas</a>
+    
+        <a HREF="calculadoraescolar.html" class="py-2 d-none d-md-inline-block" href="#">Calculadora escolar</a>
+        <a HREF="contactosss.html" class="py-2 d-none d-md-inline-block" href="#">Contacto </a>
+    
+      </nav>
+    </header>
+    
+
+
+    <script src="promedio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+         
+      <div class="shadow-md rounded-lg md:w-2/5 md:mx-auto mt-5 md:mt-10 border bg-white"> 
+        <h1 class="text-2xl font-bold px-5 pt-8">
+          Promedio Ponderado de Notas y Examen Final
+    </h1>
+ 
+        <p class="text-md mb-2 text-sm text-gray-700 mb-5 text-justify px-5">Ingresa las cuatro notas de los alumnos para hallar su promedio correspondiente (puedes usar decimales).  <strong>El programa le dirá si el alumno está aprobado o desaprobado</strong>.
+    </p>
+          </div>
+      </nav>
+
+      <h1></h1>
+
+      <center>
+        <table>
+
+          <tr>
+              <td>
+                Nota 1:
+              </td>
+              <td>
+                  <input type="text" id="primeranota">
+              </td>
+          </tr>
+          <tr>    
+              <td>
+                Nota 2:
+              </td>
+              <td>
+                  <input type="text" id="seguntanota">
+              </td>
+          </tr>
+          <tr>    
+              <td>
+                Nota 3:
+              </td>
+              <td>
+                <input type="text" id="terceranota">
+              </td>
+            <tr>
+              <tr>    
+                <td>
+                  Nota 4:
+                </td>
+                <td>
+                    <input type="text" id="cuartanota">
+                </td>
+            </tr>
+              <td>
+                  <button type="button" class="btn btn-danger" value="calcular" onclick="calculo()">Calcular</button>
+                  
+              </td>
+
+              <td>
+                  <input type="text" id="prom">
+              </td>
+            </tr>  
+    </table>
+  </center> 
+      
+
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title>
+          <circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        <small class="d-block mb-3 text-muted">&copy; 2017-2022</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Nuestra Escuela</a></li>
+          <li><a class="link-secondary" href="#">Ficha de Inscripción</a></li>
+          <li><a class="link-secondary" href="#">Contáctanos</a></li>
+          <li><a class="link-secondary" href="#">Oportunidades Laborales</a></li>
+          <li><a class="link-secondary" href="#">Mapa del Sitio </a></li>
+          <li><a class="link-secondary" href="#">Charla Virtual</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Quiénes Somos</a></li>
+          <li><a class="link-secondary" href="#">PreSchool</a></li>
+          <li><a class="link-secondary" href="#">Áreas Académicas</a></li>
+          <li><a class="link-secondary" href="#">Familia</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Blog</a></li>
+          <li><a class="link-secondary" href="#">Trabaja con Nosotros </a></li>
+          <li><a class="link-secondary" href="#">Webmail</a></li>
+          <li><a class="link-secondary" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Correo institucional</a></li>
+          <li><a class="link-secondary" href="#">Términos y Condiciones</a></li>
+          <li><a class="link-secondary" href="#">Libro de Reclamaciones</a></li>
+          <li><a class="link-secondary" href="#">Sedes</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+      
+      <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+        
+    </body>
+  </html>
+  
